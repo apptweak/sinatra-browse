@@ -73,7 +73,7 @@ module Sinatra::Browse
     end
 
     def build_match(request_method, path_info)
-      /^#{request_method}\s\s#{path_info.gsub(/:[^\/]*/, '[^\/]*')}$/
+      /^#{request_method}\s\s#{path_info.is_a?(Regexp) ? path_info : path_info.gsub(/:[^\/]*/, '[^\/]*')}$/
     end
 
     def build_declarations(declaration_maps)

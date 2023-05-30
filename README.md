@@ -2,6 +2,24 @@
 
 Parameter declaration framework and browsable API for Sinatra.
 
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+source 'https://rubygems.pkg.github.com/apptweak' do
+  gem 'apptweak-sinatra-browse'
+end
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install apptweak-sinatra-browse
+
 ## What problem do we solve?
 
 Sinatra has tools to define `GET`, `POST`, `DELETE` etc. routes. It doesn't have any tools to define their parameters.
